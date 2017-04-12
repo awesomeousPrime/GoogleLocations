@@ -1,0 +1,22 @@
+{
+  "name": "awesomeousPrime/GoogleLocations",
+  "type": "library",
+  "description": "stuffs",
+  "license": "MIT",
+  "support": {
+    "source": "https://github.com/awesomeousPrime/GoogleLocations"
+  },
+  "require": {
+    "php": ">=5.4",
+  },
+  "config": {
+    "platform": {
+      "php": "5.4"
+    }
+  },
+  "autoload": {
+    "psr-0": {
+      "Medology\\GoogleLocations\\": "src/"
+    }
+  }
+}
