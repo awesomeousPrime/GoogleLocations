@@ -1,0 +1,8 @@
+{
+  "name": "Medology/GoogleLocations",
+  "autoload": {
+    "psr-0": {
+      "Medology\\GoogleLocations\\": "src/"
+    }
+  }
+}
