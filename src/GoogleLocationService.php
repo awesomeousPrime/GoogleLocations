@@ -12,7 +12,7 @@ class GoogleLocationService{
      */
     public function __construct()
     {
-        $this->arrayQueryService = new ArrayQueryService(__DIR__ . '/../data/googleLocations.json');
+        $this->arrayQueryService = new LocationsQueryService();
     }
 
     /**
