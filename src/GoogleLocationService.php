@@ -1,4 +1,4 @@
-<?php
+<?php namespace Medology\GoogleLocations;
 
 /**
  * Service for returning a location from the google locations data file.
