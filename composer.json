@@ -1,0 +1,21 @@
+{
+  "name": "awesomeousprime/googlelocations",
+  "type": "library",
+  "license": "MIT",
+  "support": {
+    "source": "https://github.com/awesomeousPrime/GoogleLocations"
+  },
+  "require": {
+    "php": ">=5.3"
+  },
+  "config": {
+    "platform": {
+      "php": "5.3"
+    }
+  },
+  "autoload": {
+    "classmap": [
+      "./src/"
+    ]
+  }
+}
