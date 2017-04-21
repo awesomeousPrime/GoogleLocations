@@ -1,17 +1,17 @@
 <?php namespace Medology\GoogleLocations;
 
-use Medology\GoogleLocations\Models\GoogleLocations;
-use Medology\GoogleLocations\Models\Model;
-use Medology\GoogleLocations\Models\ZipCodes;
+use Medology\GoogleLocations\Services\FinderService;
+use Medology\GoogleLocations\Services\GoogleLocationsFinder;
+use Medology\GoogleLocations\Services\ZipCodesFinder;
 
 /**
  * Service for returning a location from the google locations data file.
  */
 class GoogleLocationService{
-    /** @var  Model */
+    /** @var  FinderService */
     private $googleLocationFinder;
 
-    /** @var  Model */
+    /** @var  FinderService */
     private $zipCodeFinder;
 
     /**
@@ -20,8 +20,8 @@ class GoogleLocationService{
     public function __construct()
     {
         // Use the same services within the class.
-        $this->googleLocationFinder = new GoogleLocations();
-        $this->zipCodeFinder = new ZipCodes();
+        $this->googleLocationFinder = new GoogleLocationsFinder();
+        $this->zipCodeFinder = new ZipCodesFinder();
     }
 
     /**
