@@ -1,13 +1,13 @@
-<?php namespace Medology\GoogleLocations;
+<?php namespace Medology\GeoLocations;
 
-use Medology\GoogleLocations\Services\FinderService;
-use Medology\GoogleLocations\Services\GoogleLocationsFinder;
-use Medology\GoogleLocations\Services\ZipCodesFinder;
+use Medology\GeoLocations\Services\FinderService;
+use Medology\GeoLocations\Services\GoogleLocationsFinder;
+use Medology\GeoLocations\Services\ZipCodesFinder;
 
 /**
  * Service for returning a location from the google locations data file.
  */
-class GoogleLocationService{
+class GeoLocationService{
     /** @var  FinderService */
     private $googleLocationFinder;
 

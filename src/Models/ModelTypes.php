@@ -1,4 +1,4 @@
-<?php namespace Medology\GoogleLocations\Models;
+<?php namespace Medology\GeoLocations\Models;
 
 /**
  * Different types of models that data can be retrieved from.

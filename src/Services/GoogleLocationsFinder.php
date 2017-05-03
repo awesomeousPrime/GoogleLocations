@@ -1,6 +1,6 @@
-<?php namespace Medology\GoogleLocations\Services;
+<?php namespace Medology\GeoLocations\Services;
 
-use Medology\GoogleLocations\Models\ModelTypes;
+use Medology\GeoLocations\Models\ModelTypes;
 
 /**
  * Object to handle google location records.
@@ -9,8 +9,8 @@ class GoogleLocationsFinder extends FinderService {
     /**
      * {@inheritdoc}
      */
-    public function getModelType()
+    public function getFilePath()
     {
-        return ModelTypes::GOOGLE_LOCATIONS;
+        return __DIR__ . '/../../data/' . ModelTypes::GOOGLE_LOCATIONS;
     }
 }

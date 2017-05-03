@@ -1,6 +1,6 @@
-<?php namespace Medology\GoogleLocations\Services;
+<?php namespace Medology\GeoLocations\Services;
 
-use Medology\GoogleLocations\Interfaces\QueryServiceInterface;
+use Medology\GeoLocations\Interfaces\QueryServiceInterface;
 
 /**
  * Parent class for handling models.
@@ -12,7 +12,7 @@ abstract class FinderService {
     public function __construct()
     {
         // We will retrieve our data from JSON files.
-        $this->queryService = new JsonQueryService($this->getModelType());
+        $this->queryService = new JsonQueryService($this->getFilePath());
     }
 
     /**
@@ -30,9 +30,9 @@ abstract class FinderService {
     }
 
     /**
-     * Returns the model type desired.
+     * Returns the full path from where to read data from.
      *
      * @return string
      */
-    abstract public function getModelType();
+    abstract public function getFilePath();
 }

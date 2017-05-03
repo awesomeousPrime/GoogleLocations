@@ -1,6 +1,6 @@
-<?php namespace Medology\GoogleLocations\Services;
+<?php namespace Medology\GeoLocations\Services;
 
-use Medology\GoogleLocations\Interfaces\QueryServiceInterface;
+use Medology\GeoLocations\Interfaces\QueryServiceInterface;
 
 /**
  * Query service which handles running queries on json files.
@@ -12,21 +12,11 @@ class JsonQueryService implements QueryServiceInterface {
     /**
      * Will set up properties for instance.
      *
-     * @param string $dataDir This is hte directory where the json files are stored.
+     * @param string $dataDir This is the directory where the json files are stored.
      */
     public function __construct($dataDir)
     {
         $this->dir = $dataDir;
-    }
-
-    /**
-     * Returns the full path for the directory where json files are stored.
-     *
-     * @return string
-     */
-    protected function getDataDirPath()
-    {
-        return __DIR__ . '/../../data/' . $this->dir;
     }
 
     /**
@@ -36,7 +26,7 @@ class JsonQueryService implements QueryServiceInterface {
      */
     protected function getDataFilePaths()
     {
-        $dataPath = $this->getDataDirPath();
+        $dataPath = $this->dir;
         $files = scandir($dataPath);
         $filePaths = [];
 

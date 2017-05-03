@@ -1,4 +1,4 @@
-<?php namespace Medology\GoogleLocations\Interfaces;
+<?php namespace Medology\GeoLocations\Interfaces;
 
 /**
  * Interface for making queries to data items.
