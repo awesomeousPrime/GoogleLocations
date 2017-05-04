@@ -19,9 +19,28 @@ class GeoLocationService{
      */
     public function __construct()
     {
-        // Use the same services within the class.
+        // Sets default google locations finder and zip code finder services.
         $this->googleLocationFinder = new GoogleLocationsFinder();
         $this->zipCodeFinder = new ZipCodesFinder();
+    }
+
+    /**
+     * Set a different FinderService object to be used for google locations from default.
+     *
+     * @param FinderService $locationFinder Other FinderService desired.
+     */
+    public function setGoogleLocationsFinder(FinderService $locationFinder){
+        $this->googleLocationFinder = $locationFinder;
+    }
+
+    /**
+     * Set a different ZipCode finder service to be used.
+     *
+     * @param FinderService $zipCodeFinder Other FinderService desired.
+     */
+    public function setZipCodesFinder(FinderService $zipCodeFinder)
+    {
+        $this->zipCodeFinder = $zipCodeFinder;
     }
 
     /**
