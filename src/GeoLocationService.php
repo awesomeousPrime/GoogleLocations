@@ -2,7 +2,7 @@
 
 use Medology\GeoLocations\Services\FinderService;
 use Medology\GeoLocations\Services\GoogleLocationsFinder;
-use Medology\GeoLocations\Services\ZipCodesFinder;
+use Medology\GeoLocations\Services\PostalCodesFinder;
 
 /**
  * Service for returning a location from the google locations data file.
@@ -21,7 +21,7 @@ class GeoLocationService{
     {
         // Sets default google locations finder and zip code finder services.
         $this->googleLocationFinder = new GoogleLocationsFinder();
-        $this->zipCodeFinder = new ZipCodesFinder();
+        $this->zipCodeFinder = new PostalCodesFinder();
     }
 
     /**

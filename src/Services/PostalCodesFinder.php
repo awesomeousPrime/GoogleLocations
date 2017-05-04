@@ -5,12 +5,12 @@ use Medology\GeoLocations\Models\ModelTypes;
 /**
  * Object to handle zip code records.
  */
-class ZipCodesFinder extends FinderService {
+class PostalCodesFinder extends FinderService {
     /**
      * {@inheritdoc}
      */
     public function getFilePath()
     {
-        return __DIR__ . '/../../data/' . ModelTypes::ZIP_CODES;
+        return __DIR__ . '/../../data/' . ModelTypes::POSTAL_CODES;
     }
 }

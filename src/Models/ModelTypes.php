@@ -7,5 +7,5 @@
  */
 class ModelTypes {
     const GOOGLE_LOCATIONS = 'google_locations';
-    const ZIP_CODES = 'zip_codes';
+    const POSTAL_CODES = 'postal_codes';
 }
