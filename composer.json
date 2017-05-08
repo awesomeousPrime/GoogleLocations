@@ -1,9 +1,9 @@
 {
-  "name": "awesomeousprime/googlelocations",
+  "name": "awesomeousprime/geo-location",
   "type": "library",
   "license": "MIT",
   "support": {
-    "source": "https://github.com/awesomeousPrime/GoogleLocations"
+    "source": "https://github.com/awesomeousPrime/geo-location"
   },
   "require": {
     "php": ">=5.3"
@@ -14,8 +14,8 @@
     }
   },
   "autoload": {
-    "classmap": [
-      "./src/"
-    ]
+    "psr-4": {
+      "Medology\\GeoLocations\\": "src/"
+    }
   }
 }
